@@ -1,0 +1,58 @@
+body {
+  font-family: "Lucida Grande", sans-serif;
+  background-color: darkgrey;
+}
+nav {
+  display: inline-flex;
+}
+
+h1 {
+  display: inline;
+  background-color: dimgrey;
+  color: lightgrey;
+  padding: 1em;
+}
+h2 {
+  background-color: slategrey;
+  color: darkslategrey;
+  padding: 1em;
+}
+h3 {
+  background-color: darkslategrey;
+  color: lightslategrey;
+  padding: 1em;
+}
+pre {
+  font-family: "Lucida Sans Typewriter", monospace;
+  background-color: #1f2f2f;
+  color: greenyellow;
+}
+li {
+  display: inline-flex;
+  background-color: lightgrey;
+  padding: 2em;
+}
+
+section#HTML pre {
+  line-height: 1.5em;
+  padding: 2em;
+}
+section#git pre {
+  display: inline-flex;
+  padding: 0.75em 1.25em;
+}
+section#git p {
+  display: inline-flex;
+  background-color: dimgrey;
+  color: #dfefef;
+  padding: 0.75em 1.25em;
+}
+
+footer h6 {
+  text-align: right;
+  background-color: dimgrey;
+  color: lightgrey;
+  padding-right: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}

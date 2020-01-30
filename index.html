@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Dev Cheat-sheets</title>
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Web Dev Cheat-sheets</h1>
+      <nav>
+        <ul>
+          <li><a href="#HTML">HTML</a></li>
+          <li><a href="#CSS">CSS</a></li>
+          <li><a href="#DOM">DOM</a></li>
+          <li><a href="#JS">JS</a></li>
+          <li><a href="#git">Git</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+    <section id="HTML">
+      <h2>HTML Cheat-sheet</h2>
+      <article id="form">
+        <h3>Forms</h3>
+        <pre>&lt;form&gt;
+
+  &lt;fieldset&gt;
+    &lt;legend&gt;Describes fieldset&lt;/legend&gt;
+
+    &lt;p&gt;
+      &lt;input type="radio" name="vertical" id="option1" value="top"&gt;
+      &lt;label for="option1"&gt;Top&lt;/label&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;label for="option2"&gt;
+        &lt;input type="radio" name="vertical" id="option2" value="bottom"&gt; Bottom
+      &lt;/label&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;label for="horizontal"&gt;
+        Horizontal:
+      &lt;/label&gt;
+      &lt;select id="horizontal" name="horizontal"&gt;
+        &lt;option value="left"&gt;Left&lt;/option&gt;
+        &lt;option value="middle"&gt;Middle&lt;/option&gt;
+        &lt;option value="right"&gt;Right&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/p&gt;
+
+  &lt;/fieldset&gt;
+
+&lt;/form&gt;</pre>
+      </article>
+      <article id="semantic">
+        <h3>Semantic Markup</h3>
+        <pre>&lt;html lang="en"&gt;
+
+  &lt;head&gt;
+    &lt;title&gt;Title&lt;title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+
+    &lt;header&gt;
+      Logo, title, navigation
+      &lt;nav&gt;
+        Primary and secondary menus but ever nest navs
+      &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;section&gt;
+      Related grouping of semantic meaning
+
+      &lt;article&gt;
+        Self-contained content
+      &lt;/article&gt;
+
+      &lt;article&gt;
+        Would still make sense if all other content removed
+
+        &lt;aside&gt;
+          &lt;blockquote&gt;
+            Related to main but outside the main flow
+          &lt;/blockquote&gt;
+        &lt;/aside&gt;
+
+      &lt;/article&gt;
+    &lt;/section&gt;
+
+    &lt;footer&gt;
+      Copyright, contact, links
+    &lt;/footer&gt;
+
+  &lt;/body&gt;
+
+&lt;/html&gt;</pre>
+      </article>
+      <article id="table">
+        <h3>Tables</h3>
+        <pre>&lt;table&gt;
+
+  &lt;caption&gt;Table Caption&lt;/caption&gt;
+
+  &lt;colgroup&gt;
+    &lt;col&gt;
+    &lt;col span="2" class="left-two"&gt;
+    &lt;col span="2" class="right-two"&gt;
+  &lt;/colgroup&gt;
+
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th colspan="2"&gt;Left Two&lt;/th&gt;
+      &lt;th colspan="2"&gt;Right Two&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th rowspan="2"&gt;Top Two&lt;/th&gt;
+      &lt;td&gt;Body 1,1&lt;/td&gt;
+      &lt;td&gt;Body 1,2&lt;/td&gt;
+      &lt;td&gt;Body 1,3&lt;/td&gt;
+      &lt;td&gt;Body 1,4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Body 2,1&lt;/td&gt;
+      &lt;td&gt;Body 2,2&lt;/td&gt;
+      &lt;td&gt;Body 2,3&lt;/td&gt;
+      &lt;td&gt;Body 2,4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th rowspan="2"&gt;Bottom Two&lt;/th&gt;
+      &lt;td&gt;Body 3,1&lt;/td&gt;
+      &lt;td&gt;Body 3,2&lt;/td&gt;
+      &lt;td&gt;Body 3,3&lt;/td&gt;
+      &lt;td&gt;Body 3,4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Body 4,1&lt;/td&gt;
+      &lt;td&gt;Body 4,2&lt;/td&gt;
+      &lt;td&gt;Body 4,3&lt;/td&gt;
+      &lt;td&gt;Body 4,4&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;td&gt;Footer 1&lt;/td&gt;
+      &lt;td&gt;Footer 2&lt;/td&gt;
+      &lt;td&gt;Footer 3&lt;/td&gt;
+      &lt;td&gt;Footer 4&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+
+&lt;/table&gt;</pre>
+      </article>
+    </section>
+
+    <section id="CSS">
+      <h2>CSS Cheat-sheet</h2>
+      <article id="color">
+        <h3>Coloring</h3>
+      </article>
+      <article id="position">
+        <h3>Positioning</h3>
+      </article>
+    </section>
+
+    <section id="DOM">
+      <h2>DOM Cheat-sheet</h2>
+      <article id="query">
+        <h3>Querying Elements</h3>
+      </article>
+      <article id="select">
+        <h3>Selecting Elements</h3>
+      </article>
+    </section>
+
+    <section id="JS">
+      <h2>JavaScript Cheat-sheet</h2>
+      <article id="arrays">
+        <h3>Arrays</h3>
+      </article>
+      <article id="objects">
+        <h3>Objects</h3>
+      </article>
+    </section>
+
+    <section id="git">
+      <h2>Git Cheat-sheet</h2>
+      <article id="create">
+        <h3>Creating and Committing</h3>
+        <div>
+          <pre>git init</pre>
+          <p>creates local repository--don't forget .gitignore</p>
+        </div>
+        <div>
+          <pre>git clone &lt;http | https | ssh | git URL&gt;</pre>
+          <p>(http and git don't require credentials)</p>
+        </div>
+        <div>
+          <pre>git add -A [-v]</pre>
+          <p>adds, modifies, and removes entries to match working tree</p>
+        </div>
+        <div>
+          <pre>git add -u [-v]</pre>
+          <p>removes and modifies entries to match working tree; adds nothing</p>
+        </div>
+        <div>
+          <pre>git rm &lt;file&gt;</pre>
+          <p>removes file from working tree and index</p>
+        </div>
+        <div>
+          <pre>git commit -m "Message"</pre>
+          <p>commits working tree to branch</p>
+        </div>
+        <div>
+          <pre>git commit --amend -m "New message"</pre>
+          <p>add changes and/or changes message to last commit</p>
+        </div>
+      </article>
+      <article id="branch">
+        <h3>Branching and Merging</h3>
+        <div>
+          <pre>git branch -vva</pre>
+          <p>lists all local and remote branches</p>
+        </div>
+        <div>
+          <pre>git branch branch-name</pre>
+          <p>creates new branch</p>
+        </div>
+        <div>
+          <pre>git branch -d branch-name</pre>
+          <p>deletes local branch</p>
+        </div>
+        <div>
+          <pre>git checkout &lt;branch-name&gt;</pre>
+          <p>checks out local branch</p>
+        </div>
+        <div>
+          <pre>git merge &lt;branch-name&gt;</pre>
+          <p>merges branch-name into current checked-out branch</p>
+        </div>
+        <div>
+          <pre>git merge --abort</pre>
+          <p>aborts merge during conflict resolution</p>
+        </div>
+      </article>
+      <article id="stash">
+        <h3>Stashing</h3>
+        <div>
+          <pre>git stash</pre>
+          <p>stashes local changes and cleans working directory</p>
+        </div>
+        <div>
+          <pre>git stash list</pre>
+          <p>lists stashes, newest on top</p>
+        </div>
+        <div>
+          <pre>git stash pop</pre>
+          <p>applies changes to working directory and removes stash</p>
+        </div>
+        <div>
+          <pre>git stash apply [stash-name]</pre>
+          <p>applies changes but keeps stash</p>
+        </div>
+        <div>
+          <pre>git stash drop [stash-name]</pre>
+          <p>deletes stash</p>
+        </div>
+      </article>
+      <article id="undo">
+        <h3>Undoing</h3>
+        <div>
+          <pre>git checkout HEAD file/to/restore.ext</pre>
+          <p>restores a file to the last committed version</p>
+        </div>
+        <div>
+          <pre>git reset --hard &lt;HEAD | 7-hash-digits&gt;</pre>
+          <p>replaces working copy files with last or specified commit</p>
+        </div>
+        <div>
+          <pre>git revert &lt;7-hash-digits&gt;</pre>
+          <p>produces new commit with changes to revert to specified commit</p>
+        </div>
+      </article>
+      <article id="remote">
+        <h3>Remote</h3>
+        <div>
+          <pre>git remote -v</pre>
+          <p>lists remote repositories with URLs</p>
+        </div>
+        <div>
+          <pre>git fetch origin</pre>
+          <p>updates local information about the remote</p>
+        </div>
+        <div>
+          <pre>git pull</pre>
+          <p>fetches and merges remote commits</p>
+        </div>
+        <div>
+          <pre>git checkout --track origin/branch-name</pre>
+          <p>creates and checks out local branch with same name as remote</p>
+        </div>
+        <div>
+          <pre>git push [-u origin branch-name]</pre>
+          <p>uploads local commits to remote, [optional] required if not tracked</p>
+        </div>
+        <div>
+          <pre>git push origin --delete branch-name</pre>
+          <p>deletes remote branch</p>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <h6>
+        2020 J.West <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a>
+      </h6>
+    </footer>
+    </main>
+<!--    <script src="index.js"></script>-->
+  </body>
+</html>
+<!--
+TODO:
+** CSS **
+position
+z-index
+
+** DOM **
+Objects: document, window, global
+
+-->
