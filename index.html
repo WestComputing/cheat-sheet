@@ -186,9 +186,48 @@
       <h2>JavaScript Cheat-sheet</h2>
       <article id="arrays">
         <h3>Arrays</h3>
+        <div>
+          <pre>Array.from(arrayLike[, mapFn[, thisArg]])</pre>
+          <p>creates mapped array from array-like iterable object</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from">MDN</a>
+        </div>
+        <div>
+          <pre>Array.prototype.includes(valueToFind[, fromIndex])</pre>
+          <p>returns true if value found</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes">MDN</a>
+        </div>
       </article>
       <article id="objects">
         <h3>Objects</h3>
+        <div>
+          <pre>Object.prototype.hasOwnProperty('property')</pre>
+          <p>returns true of object has property (not inherited) specified in string</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty">MDN</a>
+        </div>
+        <div>
+          <pre>for (let [key, value] of Object.entries(object1))</pre>
+          <p>returns array of object's keys and values [key, value]</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries">MDN</a>
+        </div>
+        <div>
+          <pre>console.log(Object.keys(object1))</pre>
+          <p>returns array of object's own property names</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys">MDN</a>
+        </div>
+      </article>
+      <article id="misc">
+        <h3>Miscellaneous</h3>
+        <div>
+          <pre>parseInt(process.version.slice(1))</pre>
+          <p>returns node's major version number</p>
+          <a href="https://nodejs.org/en/knowledge/getting-started/the-process-module/">nodejs article</a>
+          <a href="https://nodejs.org/dist/latest-v13.x/docs/api/process.html#process_process_version">nodejs docs</a>
+        </div>
+        <div>
+          <pre>typeof variable === "undefined"</pre>
+          <p>checks if variable is defined (don't forget the quotes!)</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof">MDN</a>
+        </div>
       </article>
     </section>
 

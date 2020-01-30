@@ -37,15 +37,22 @@ section#HTML pre {
   line-height: 1.5em;
   padding: 2em;
 }
-section#git pre {
+section#git pre,
+section#JS pre {
   display: inline-flex;
   padding: 0.75em 1.25em;
 }
-section#git p {
+section#git p,
+section#JS p {
   display: inline-flex;
   background-color: dimgrey;
   color: #dfefef;
   padding: 0.75em 1.25em;
+}
+section#JS a {
+  display: inline-flex;
+  background-color: lightgrey;
+  padding: 0.75em;
 }
 
 footer h6 {
