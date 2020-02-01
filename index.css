@@ -32,6 +32,9 @@ li {
   background-color: lightgrey;
   padding: 2em;
 }
+li:hover {
+  background-color: whitesmoke;
+}
 
 section#HTML pre {
   line-height: 1.5em;
@@ -49,12 +52,17 @@ section#JS p {
   color: #dfefef;
   padding: 0.75em 1.25em;
 }
+section#git a,
 section#JS a {
   display: inline-flex;
   background-color: lightgrey;
   padding: 0.75em;
 }
-
+section#git a:hover,
+section#JS a:hover {
+  display: inline-flex;
+  background-color: whitesmoke;
+}
 footer h6 {
   text-align: right;
   background-color: dimgrey;
