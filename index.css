@@ -41,25 +41,29 @@ section#HTML pre {
   padding: 2em;
 }
 section#git pre,
-section#JS pre {
+section#JS pre,
+section#DOM pre {
   display: inline-flex;
   padding: 0.75em 1.25em;
 }
 section#git p,
-section#JS p {
+section#JS p,
+section#DOM p {
   display: inline-flex;
   background-color: dimgrey;
   color: #dfefef;
   padding: 0.75em 1.25em;
 }
 section#git a,
-section#JS a {
+section#JS a,
+section#DOM a {
   display: inline-flex;
   background-color: lightgrey;
   padding: 0.75em;
 }
 section#git a:hover,
-section#JS a:hover {
+section#JS a:hover,
+section#DOM a:hover {
   display: inline-flex;
   background-color: whitesmoke;
 }

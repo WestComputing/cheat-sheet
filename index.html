@@ -175,10 +175,47 @@
     <section id="DOM">
       <h2>DOM Cheat-sheet</h2>
       <article id="query">
-        <h3>Querying Elements</h3>
+        <h3>Querying/Selecting Elements</h3>
+        <div>
+          <pre>document.getElementById(id)</pre>
+          <p>returns element object by id</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById">MDN</a>
+        </div>
+        <div>
+          <pre>document.getElementsByClassName(className)</pre>
+          <p>returns live HTMLCollection of elements by class</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName">MDN</a>
+        </div>
+        <div>
+          <pre>document.getElementsByTagName(tagName)</pre>
+          <p>returns live HTMLCollection of elements by tag</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/document/getElementsByTagName">MDN</a>
+        </div>
+        <div>
+          <pre>document.querySelector(cssSelector)</pre>
+          <p>returns the first element matching selector(s)</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">MDN</a>
+        </div>
+        <div>
+          <pre>document.querySelectorAll(cssSelector)</pre>
+          <p>returns static NodeList representing elements matching selector(s)</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">MDN</a>
+        </div>
       </article>
       <article id="select">
-        <h3>Selecting Elements</h3>
+        <h3>Traversing Elements</h3>
+        <div>
+          <pre>firstElementChild, lastElementChild</pre>
+          <p>returns first/last child element or null if none</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/ParentNode">MDN</a>
+        </div>
+        <div>
+          <pre>nextElementChild, previousElementChild
+nextElementSibling, previousElementSibling
+parentNode, childNodes, childElementCount</pre>
+          <p>self-explanatory</p>
+          <a href="https://javascript.info/dom-navigation#siblings-and-the-parent">JAVASCRIPT.INFO</a>
+        </div>
       </article>
     </section>
 
