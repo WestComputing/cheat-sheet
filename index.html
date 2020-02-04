@@ -278,6 +278,18 @@ parentNode, childNodes, childElementCount</pre>
 
     <section id="git">
       <h2>Git Cheat-sheet</h2>
+      <article id="view">
+        <h3>Viewing</h3>
+        <div>
+          <pre>git log --oneline</pre>
+          <p>shows most concise history format</p>
+          <a href="https://git-scm.com/docs/git-log">git reference</a>
+        </div>
+        <div>
+          <pre>git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=human</pre>
+          <p>shows a practical format</p>
+        </div>
+      </article>
       <article id="create">
         <h3>Creating and Committing</h3>
         <div>
@@ -405,6 +417,18 @@ parentNode, childNodes, childElementCount</pre>
         <div>
           <pre>git push origin --delete branch-name</pre>
           <p>deletes remote branch</p>
+        </div>
+      </article>
+      <article id="config">
+        <h3>Configuring</h3>
+        <div>
+          <pre>git config --list [--local|--global] [ | sort]</pre>
+          <p>shows current configuration</p>
+          <a href="https://git-scm.com/docs/git-config">git reference</a>
+        </div>
+        <div>
+          <pre>git config [--global] core.editor /path/to/editor</pre>
+          <p>selects editor for blank commit comment</p>
         </div>
       </article>
     </section>
