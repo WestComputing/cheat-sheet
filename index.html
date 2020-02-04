@@ -377,8 +377,13 @@ parentNode, childNodes, childElementCount</pre>
       <article id="undo">
         <h3>Undoing</h3>
         <div>
-          <pre>git checkout HEAD file/to/restore.ext</pre>
+          <pre>git checkout file/to/restore.ext</pre>
           <p>restores a file to the last committed version</p>
+        </div>
+        <div>
+          <pre>git reset HEAD file/to/unstage.ext</pre>
+          <p>clears staging area of staged changes without changing working copy</p>
+          <a href="https://git-scm.com/docs/git-reset">git reference</a>
         </div>
         <div>
           <pre>git reset --hard &lt;HEAD | 7-hash-digits&gt;</pre>
