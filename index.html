@@ -441,6 +441,36 @@ parentNode, childNodes, childElementCount</pre>
           <p>selects editor for blank commit comment</p>
         </div>
       </article>
+      <article id="workflow">
+        <h3>Workflow</h3>
+        <div>
+          <p>From:</p> <a href="https://learn-2.galvanize.com/cohorts/1792/blocks/111/content_files/Git_and_the_Command_Line/git-workflow-overview.md">HR Git Workflow</a>
+          <ol>
+            <li>Fork project from&nbsp;<a href="https://github.com/orgs/hackreactor/dashboard">hackreactor</a>&nbsp;GitHub</li>
+            <li>Clone GitHub forked project to local machine
+              <pre>git clone https://github.com/<i>USER_NAME/REPOSITORY_NAME</i>.git</pre>
+            </li>
+            <li>Add remote to point to original (upstream) repo
+              <pre>git remote add upstream https://github.com/<i>USER_NAME/REPOSITORY_NAME</i>.git</pre>
+            </li>
+            <li>Check for correct branch and clean staging area
+              <pre>git status</pre>
+            </li>
+            <li>Make smallest possible change to add or improve something; review
+              <pre>git status, git diff</pre>
+            </li>
+            <li>Add files to commit
+              <pre>git add, git status</pre>
+            </li>
+            <li>Commit changes
+              <pre>git commit, git status</pre>
+            </li>
+            <li>Push changes to GitHub fork
+              <pre>git push origin master</pre>
+            </li>
+          </ol>
+        </div>
+      </article>
     </section>
 
     <footer>

@@ -27,13 +27,18 @@ pre {
   background-color: #1f2f2f;
   color: greenyellow;
 }
-li {
+ul li {
   display: inline-flex;
   background-color: lightgrey;
   padding: 2em;
 }
-li:hover {
+ul li:hover {
   background-color: whitesmoke;
+}
+ol li {
+  background-color: #223434;
+  color: antiquewhite;
+  padding: 0 1em 0;
 }
 
 section#HTML pre {
