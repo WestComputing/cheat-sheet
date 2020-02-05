@@ -47,11 +47,32 @@ table {
   border-spacing: 0;
 }
 /* end reset */
-
 body {
+  --body-background-color: #637568;
+  --body-color: white;
+  --title-background-color: #637568;
+  --title-color: white;
+
+  --heading-background-color: #62B57B;
+  --heading-color: #1D3624;
+  --subheading-background-color: #3F7550;
+  --subheading-color: #84F5A6;
+
+  --code-background-color: #1E3826;
+  --code-color: #84F5A6;
+  --description-background-color: #637568;
+  --description-color: #CFF7DB;
+
+  --link-background-color: lightgrey;
+  --link-background-hover-color: whitesmoke;
+  --link-color: black;
+
+
+
   font-family: "Lucida Grande", sans-serif;
-  background-color: darkgrey;
+  background-color: var(--body-background-color, darkgrey);
 }
+
 
 .title-nav {
   display: inline-block;
@@ -63,38 +84,41 @@ body {
   display: inline;
   padding: .84em;
   margin: 0;
-  background-color: dimgrey;
-  color: lightgrey;
+  background-color: var(--title-background-color);
+  color: var(--title-color);
   font-size: 2em;
   font-weight: bolder;
 }
 
 h2 {
-  background-color: slategrey;
-  color: darkslategrey;
+  background-color: var(--heading-background-color);
+  color: var(--heading-color);
+  font-size: 1.5em;
+  font-weight: bolder;
   padding: 1em;
 }
 h3 {
-  background-color: darkslategrey;
-  color: lightslategrey;
+  background-color: var(--subheading-background-color);
+  color: var(--subheading-color);
+  font-size: 1.25em;
   padding: 1em;
 }
 pre {
   font-family: "Lucida Sans Typewriter", monospace;
-  background-color: #1f2f2f;
-  color: greenyellow;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
 }
 ul li {
   display: inline-flex;
-  background-color: lightgrey;
+  background-color: var(--link-background-color);
   padding: 2em;
 }
 ul li:hover {
-  background-color: whitesmoke;
+  background-color: var(--link-background-hover-color);
 }
 ol li {
-  background-color: #223434;
-  color: antiquewhite;
+  background-color: var(--description-background-color);
+  color: var(--description-color);
   padding: 0 1em 0;
 }
 
@@ -114,8 +138,8 @@ section#JS p,
 section#DOM p,
 section#CSS p {
   display: inline-flex;
-  background-color: dimgrey;
-  color: #dfefef;
+  background-color: var(--description-background-color);
+  color: var(--description-color);
   padding: 0.75em 1.25em;
 }
 section#git a,
@@ -123,7 +147,7 @@ section#JS a,
 section#DOM a,
 section#CSS a {
   display: inline-flex;
-  background-color: lightgrey;
+  background-color: var(--link-background-color);
   padding: 0.75em;
 }
 section#git a:hover,
@@ -131,7 +155,7 @@ section#JS a:hover,
 section#DOM a:hover,
 section#CSS a:hover {
   display: inline-flex;
-  background-color: whitesmoke;
+  background-color: var(--link-background-hover-color);
 }
 footer h6 {
   text-align: right;
