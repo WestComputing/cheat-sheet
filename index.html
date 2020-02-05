@@ -310,17 +310,17 @@ parentNode, childNodes, childElementCount</pre>
           <p>removes and modifies entries to match working tree; adds nothing</p>
         </div>
         <div>
-          <pre>git rm &lt;file&gt;</pre>
+          <pre>git rm <i>&lt;file&gt;</i></pre>
           <p>removes file from working tree and index</p>
         </div>
         <div>
-          <pre>git commit -m "Message"</pre>
+          <pre>git commit -m <i>"Message"</i></pre>
           <p>commits working tree to branch</p>
           <a href="https://git-scm.com/docs/git-commit">git reference</a>
           <a href="https://chris.beams.io/posts/git-commit/#seven-rules">rules</a>
         </div>
         <div>
-          <pre>git commit --amend -m "New message"</pre>
+          <pre>git commit --amend -m <i>"New message"</i></pre>
           <p>add changes and/or changes message to last commit</p>
         </div>
       </article>
@@ -331,23 +331,23 @@ parentNode, childNodes, childElementCount</pre>
           <p>lists all local and remote branches</p>
         </div>
         <div>
-          <pre>git branch &lt;branch-name&gt;</pre>
+          <pre>git branch <i>&lt;branch-name&gt;</i></pre>
           <p>creates new branch</p>
         </div>
         <div>
-          <pre>git branch -d &lt;branch-name&gt;</branch-name></pre>
+          <pre>git branch -d <i>&lt;branch-name&gt;</i></pre>
           <p>deletes local branch</p>
         </div>
         <div>
-          <pre>git checkout &lt;branch-name&gt;</pre>
+          <pre>git checkout <i>&lt;branch-name&gt;</i></pre>
           <p>checks out local branch</p>
         </div>
         <div>
-          <pre>git checkout -b &lt;branch-name&gt;</pre>
+          <pre>git checkout -b <i>&lt;branch-name&gt;</i></pre>
           <p>shortcut for git branch + git checkout &lt;branch-name&gt</p>
         </div>
         <div>
-          <pre>git merge &lt;branch-name&gt;</pre>
+          <pre>git merge <i>&lt;branch-name&gt;</i></pre>
           <p>merges branch-name into current checked-out branch</p>
         </div>
         <div>
@@ -370,22 +370,22 @@ parentNode, childNodes, childElementCount</pre>
           <p>applies changes to working directory and removes stash</p>
         </div>
         <div>
-          <pre>git stash apply [stash-name]</pre>
+          <pre>git stash apply [<i>stash-name</i>]</pre>
           <p>applies changes but keeps stash</p>
         </div>
         <div>
-          <pre>git stash drop [stash-name]</pre>
+          <pre>git stash drop [<i>stash-name</i>]</pre>
           <p>deletes stash</p>
         </div>
       </article>
       <article id="undo">
         <h3>Undoing</h3>
         <div>
-          <pre>git checkout file/to/restore.ext</pre>
+          <pre>git checkout <i>file/to/restore.ext</i></pre>
           <p>restores a file to the last committed version</p>
         </div>
         <div>
-          <pre>git reset HEAD file/to/unstage.ext</pre>
+          <pre>git reset HEAD <i>file/to/unstage.ext</i></pre>
           <p>clears staging area of staged changes without changing working copy</p>
           <a href="https://git-scm.com/docs/git-reset">git reference</a>
         </div>
@@ -425,19 +425,19 @@ parentNode, childNodes, childElementCount</pre>
           <p>uploads local commits to remote, [optional] required if not tracked</p>
         </div>
         <div>
-          <pre>git push origin --delete branch-name</pre>
+          <pre>git push origin --delete <i>branch-name</i></pre>
           <p>deletes remote branch</p>
         </div>
       </article>
       <article id="config">
         <h3>Configuring</h3>
         <div>
-          <pre>git config --list [--local|--global] [ | sort]</pre>
+          <pre>git config --list [--local|--global][ | sort]</pre>
           <p>shows current configuration</p>
           <a href="https://git-scm.com/docs/git-config">git reference</a>
         </div>
         <div>
-          <pre>git config [--global] core.editor /path/to/editor</pre>
+          <pre>git config [--global] core.editor <i>/path/to/editor</i></pre>
           <p>selects editor for blank commit comment</p>
         </div>
       </article>
