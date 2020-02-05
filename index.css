@@ -103,13 +103,15 @@ section#HTML pre {
 }
 section#git pre,
 section#JS pre,
-section#DOM pre {
+section#DOM pre,
+section#CSS pre {
   display: inline-flex;
   padding: 0.75em 1.25em;
 }
 section#git p,
 section#JS p,
-section#DOM p {
+section#DOM p,
+section#CSS p {
   display: inline-flex;
   background-color: dimgrey;
   color: #dfefef;
@@ -117,14 +119,16 @@ section#DOM p {
 }
 section#git a,
 section#JS a,
-section#DOM a {
+section#DOM a,
+section#CSS a {
   display: inline-flex;
   background-color: lightgrey;
   padding: 0.75em;
 }
 section#git a:hover,
 section#JS a:hover,
-section#DOM a:hover {
+section#DOM a:hover,
+section#CSS a:hover {
   display: inline-flex;
   background-color: whitesmoke;
 }
