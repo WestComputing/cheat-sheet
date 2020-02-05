@@ -331,16 +331,20 @@ parentNode, childNodes, childElementCount</pre>
           <p>lists all local and remote branches</p>
         </div>
         <div>
-          <pre>git branch branch-name</pre>
+          <pre>git branch &lt;branch-name&gt;</pre>
           <p>creates new branch</p>
         </div>
         <div>
-          <pre>git branch -d branch-name</pre>
+          <pre>git branch -d &lt;branch-name&gt;</branch-name></pre>
           <p>deletes local branch</p>
         </div>
         <div>
           <pre>git checkout &lt;branch-name&gt;</pre>
           <p>checks out local branch</p>
+        </div>
+        <div>
+          <pre>git checkout -b &lt;branch-name&gt;</pre>
+          <p>shortcut for git branch + git checkout &lt;branch-name&gt</p>
         </div>
         <div>
           <pre>git merge &lt;branch-name&gt;</pre>
@@ -387,17 +391,17 @@ parentNode, childNodes, childElementCount</pre>
         </div>
         <div>
           <pre>git reset --hard &lt;HEAD | 7-hash-digits&gt;</pre>
-          <p>replaces working copy files with last or specified commit</p>
+          <p>replaces working copy files with last or specified commit, moves HEAD</p>
         </div>
         <div>
-          <pre>git revert &lt;7-hash-digits&gt;</pre>
-          <p>produces new commit with changes to revert to specified commit</p>
+          <pre>git revert &lt;HEAD | 7-hash-digits&gt;</pre>
+          <p>produces new commit with changes to revert to last or specified commit</p>
         </div>
       </article>
       <article id="remote">
         <h3>Remote</h3>
         <div>
-          <pre>git remote add origin &lt;http | https | ssh | git URL&gt;</pre>
+          <pre>git remote add <i>upstream</i> &lt;http | https | ssh | git URL&gt;</pre>
           <p>adds remote repository</p>
         </div>
         <div>
@@ -405,19 +409,19 @@ parentNode, childNodes, childElementCount</pre>
           <p>lists remote repositories with URLs</p>
         </div>
         <div>
-          <pre>git fetch origin</pre>
+          <pre>git fetch <i>origin</i></pre>
           <p>updates local information about the remote</p>
         </div>
         <div>
-          <pre>git pull</pre>
+          <pre>git pull [<i>upstream master</i>]</pre>
           <p>fetches and merges remote commits</p>
         </div>
         <div>
-          <pre>git checkout --track origin/branch-name</pre>
+          <pre>git checkout --track <i>origin/branch-name</i></pre>
           <p>creates and checks out local branch with same name as remote</p>
         </div>
         <div>
-          <pre>git push [-u origin branch-name]</pre>
+          <pre>git push [-u <i>origin branch-name</i>]</pre>
           <p>uploads local commits to remote, [optional] required if not tracked</p>
         </div>
         <div>
